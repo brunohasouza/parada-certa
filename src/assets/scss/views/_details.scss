@@ -1,0 +1,169 @@
+.details {
+  &__button {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__carousel {
+    margin-bottom: 1rem;
+
+    .v-carousel, .v-window--show-arrows-on-hover {
+      overflow: unset !important;
+    }
+
+    .v-window {
+      &__next, &__prev {
+        margin: 0;
+        background-color: rgba($color: white, $alpha: .8);
+
+        svg {
+          fill: black;
+        }
+      }
+
+      &__next {
+        right: -0.75rem;
+      }
+
+      &__prev {
+        left: -0.75rem
+      }
+    }
+  }
+
+  &__location {
+    padding: .75rem 0;
+  }
+
+  &__owner {
+    padding: .75rem 0;
+
+    p {
+      margin: 0;
+    }
+
+    &--header {
+      display: flex;
+      align-items: center;
+      margin-bottom: .75rem;
+
+      h1 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+  
+        padding-left: .5rem;
+        margin: 0;
+        line-height: 1.5rem !important;
+      }
+    }
+
+    &--info {
+      display: flex;
+      align-items: center;
+      margin-bottom: .75rem;
+
+      span {
+        display: inline-block;
+      }      
+    }
+
+    &--description {
+      margin-bottom: .75rem;
+    }
+
+    &--verified {
+      margin-left: auto;
+    }
+  }
+
+  &__comfort {
+    padding: .75rem 0;
+
+    &--list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: .5rem;
+      row-gap: .5rem;
+      padding: .75rem 0;
+    }
+
+    &--element {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      span {
+        display: -webkit-box;
+        line-height: 18px !important;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        padding-left: .5rem;
+      }
+    }
+  }
+
+  &__comments {
+    padding: .75rem 0;
+    &--rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      span {
+        margin-left: .25rem;
+      }
+    }
+  }
+
+  &__info {
+    padding: .5rem 0;
+
+    &--convenient {
+      padding: .5rem 0;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &--price {
+      p {
+        margin: 0;
+      }
+    }
+
+    &--value {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      padding-top: .25rem;
+      padding-bottom: .75rem;
+    }
+
+    &--dot {
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      background-color:$green-default;
+      margin-right: .25rem;
+    }
+
+    &--tags {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        display: inline-block;
+        padding: 0 .25rem;
+
+        &:not(:last-child) {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
